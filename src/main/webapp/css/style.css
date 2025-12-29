@@ -1,0 +1,256 @@
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+input, button {
+    width: 90%;
+    padding: 8px;
+    margin: 6px;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    background: linear-gradient(135deg, #6a7be7, #7b5bc7);
+    min-height: 100vh;
+}
+
+/* HEADER */
+header h1 {
+    font-weight: 600;
+}
+header p {
+    opacity: 0.9;
+}
+
+/* MAIN CARD */
+.main-card {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* VIDEO */
+.video-box {
+    background: black;
+    height: 260px;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* EMOTION BOX */
+.emotion-box {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.emotion-box h2 {
+    font-weight: 600;
+    animation: pulse 1.5s infinite;
+}
+
+/* BUTTONS */
+.btn {
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+/* CHATBOT */
+.chat-card {
+    background: white;
+    border-radius: 20px;
+    height: 520px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+#chatHeader {
+    background: linear-gradient(135deg, #6a7be7, #7b5bc7);
+    color: white;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 20px 20px 0 0;
+}
+
+#chatBody {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.bot {
+    background: #6a7be7;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.user {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+/* CHAT INPUT */
+#chatInput {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#chatInput input {
+    flex: 1;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    outline: none;
+}
+
+#chatInput button {
+    border-radius: 50%;
+    border: none;
+    background: #6a7be7;
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+
+
+/* ANIMATION */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+/* PROFILE CARD */
+.profile-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.profile-pic-wrapper {
+    position: relative;
+    width: 100px;
+    margin: auto;
+}
+
+.profile-pic-wrapper img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0d6efd;
+}
+
+.edit-pic {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.profile-card input,
+.profile-card textarea {
+    font-size: 14px;
+}
+.playlist-section {
+    margin-top: 30px;
+    padding: 0 20px;
+    color: white;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h3 {
+    font-weight: bold;
+}
+
+.section-header a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.playlist-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scrollbar-width: none;
+}
+
+.playlist-row::-webkit-scrollbar {
+    display: none;
+}
+
+.playlist-card {
+    min-width: 180px;
+    background: #181818;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.playlist-card:hover {
+    background: #242424;
+    transform: scale(1.05);
+}
+
+.playlist-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.playlist-card h5 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.playlist-card p {
+    font-size: 13px;
+    color: #aaa;
+}
+
+
